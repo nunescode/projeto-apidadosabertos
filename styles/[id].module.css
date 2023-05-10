@@ -1,0 +1,25 @@
+.detalhescard {
+    max-width: 300px;
+    margin: 0 auto;
+    display: flex;
+    text-align: center;
+}
+
+.textcard {
+    text-align: center;
+    margin: auto;
+    backdrop-filter: blur(10px);
+    background-color: rgba(25, 135, 84, 0.1);
+    padding: 3px;
+    border-radius: 8px;
+}
+
+.textalert {
+    text-align: center;
+    margin: auto;
+    backdrop-filter: blur(10px);
+    background-color: rgba(25, 135, 84, 0.1);
+    padding: 3px;
+    border-radius: 8px;
+    color: black;
+}
