@@ -1,21 +1,25 @@
 import React from 'react'
 import { Button, Container, Form, Nav, Navbar } from 'react-bootstrap'
 
+import styles from '../styles/Cabecalho.module.css'
+
 import "bootstrap/dist/css/bootstrap.min.css";
+
+
 
 const Cabecalho = () => {
   return (
     <>
-    <Navbar bg="success" variant="dark">
+    <Navbar className={styles.mynavbar} bg="success" variant="dark">
         <Container>
-          <Navbar.Brand href="#home">Pagina Inicial</Navbar.Brand>
-          <Nav className="me-auto">
-            <Nav.Link href="/deputados">Deputados</Nav.Link>
-            <Nav.Link href="/deputados">Detalhes</Nav.Link>
+          <Navbar.Brand className={styles.mynavbrand} href="#home">Pagina Inicial</Navbar.Brand>
+          <Nav className={styles.mynav}>
+            <Nav.Link className={styles.mylink} href="/deputados">Deputados</Nav.Link>
+            <Nav.Link className={styles.mylink} href="/deputados">Detalhes</Nav.Link>
           </Nav>
-          <Form className="d-flex">
-            <Form.Control type="search" placeholder="Buscar" className="me-2" aria-label="Buscar"/>
-              <Button variant="primary">Buscar</Button>
+          <Form className={styles.myform}>
+            <Form.Control className={styles.mysearch} type="search" placeholder="Buscar" aria-label="Buscar"/>
+              <Button className={styles.mybutton}>Buscar</Button>
             </Form>
         </Container>
       </Navbar>
