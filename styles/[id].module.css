@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@300;400&display=swap');
+
 .detalhescard {
+    font-family: 'Roboto', 'sans-serif';
     max-width: 300px;
     margin: 0 auto;
     display: flex;
@@ -6,6 +9,7 @@
 }
 
 .textcard {
+    font-family: 'Roboto', 'sans-serif';
     text-align: center;
     margin: auto;
     backdrop-filter: blur(10px);
@@ -15,6 +19,7 @@
 }
 
 .textalert {
+    font-family: 'Roboto', 'sans-serif';
     text-align: center;
     margin: auto;
     backdrop-filter: blur(10px);
@@ -22,4 +27,9 @@
     padding: 3px;
     border-radius: 8px;
     color: black;
+}
+
+.tabledetalhes {
+    font-family: 'Roboto', 'sans-serif';
+    background:linear-gradient(yellow, green);
 }
