@@ -13,7 +13,7 @@ const Detalhes = ({ deputadoDt, despesas }) => {
         <Card.Header className='bg-success text-white text-center p-2'><h3><strong>{deputadoDt.ultimoStatus.nome}</strong></h3></Card.Header>
           <Card.Img variant="top" src={deputadoDt.ultimoStatus.urlFoto} />
             <Card.Body>
-            <Card.Title className={styles.textcard}><strong>Informações</strong></Card.Title>
+            <Card.Title className={styles.textcard} ><strong>Informações</strong></Card.Title>
             <br></br>
               <Card.Text className={styles.textcard}><strong>Email: </strong>{deputadoDt.ultimoStatus.gabinete.email}</Card.Text>
               <Card.Text className={styles.textcard}><strong>Data de nascimento: </strong>{new Date (deputadoDt.dataNascimento).toLocaleDateString('pt-BR')}</Card.Text>

@@ -7,9 +7,9 @@ const Pagina = (props) => {
         <>
         <Cabecalho/>
             <div className="bg-warning text-white py-2 text-center margin-bottom mb-3">
-                <h2><strong>{props.titulo}</strong></h2>
+                <h2><strong>{props.titulo} </strong></h2>
             </div>
-            <Container>{props.children}</Container>
+            <Container>{props.children} </Container>
         <Container/>
         </>
     )

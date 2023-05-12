@@ -11,7 +11,7 @@
     backdrop-filter: blur(10px);
     background-color: rgba(25, 135, 84, 0.1);
     padding: 3px;
-    border-radius: 8px;
+    border-radius: 7px;
 }
 
 .textalert {
