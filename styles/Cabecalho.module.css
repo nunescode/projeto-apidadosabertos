@@ -1,14 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@300;400&display=swap');
+
 .mynavbar {
+    font-family: 'Roboto', 'sans-serif';
     background-color: #008000;
 }
 
 .mybrand {
+    font-family: 'Roboto', 'sans-serif';
     font-size: 1.5rem;
     font-weight: bold;
     margin: auto;
 }
 
 .mylink {
+    font-family: 'Roboto', 'sans-serif';
     color: #fff;
     margin-right: 1rem;
     font-weight: bold;
@@ -30,6 +35,7 @@
 }
 
 .mysearch {
+    font-family: 'Roboto', 'sans-serif';
     background-color: #fff;
     border: none;
     border-radius: 0.5rem;
@@ -37,6 +43,7 @@
 }
 
 .mybutton {
+    font-family: 'Roboto', 'sans-serif';
     background-color: #0d6efd;
     color: white;
     border: none;
@@ -56,6 +63,7 @@
 
 
 .myform {
+    font-family: 'Roboto', 'sans-serif';
     display: flex;
     align-items: center;
 }
