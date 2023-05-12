@@ -14,19 +14,19 @@ const index = ({ deputados }) => {
       <Pagina titulo="Lista de deputados">
         <Row md={4}>
           {deputados.map((item) => (
-            <Col key={item.id} className={styles.colum}>
+            <Col key={item.id} className={styles.colum} >
               <Card className={styles.meucard}>
                 <Card.Img variant="top" src={item.urlFoto} />
                 <Card.Body>
-                  <Card.Title className={styles.meutitle}>
-                    <strong>{item.nome}</strong>
+                  <Card.Title className={styles.meutitle} >
+                    <strong>{item.nome} </strong>
                   </Card.Title>
-                  <p className={styles.meupartido}>
-                    <strong>Partido: </strong>
+                  <p className={styles.meupartido} >
+                    <strong>Partido: </strong> 
                     {item.siglaPartido}
                   </p>
-                  <p className={styles.meuuf}>
-                    <strong>UF: </strong>
+                  <p className={styles.meuuf} >
+                    <strong>UF: </strong> 
                     {item.siglaUf}
                   </p>
                   <Link

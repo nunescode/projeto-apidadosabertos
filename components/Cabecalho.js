@@ -14,8 +14,8 @@ const Cabecalho = () => {
         <Container>
           <Navbar.Brand className={styles.mynavbrand} href="#home">Pagina Inicial</Navbar.Brand>
           <Nav className={styles.mynav}>
-            <Nav.Link className={styles.mylink} href="/deputados">Deputados</Nav.Link>
-            <Nav.Link className={styles.mylink} href="/deputados">Detalhes</Nav.Link>
+            <Nav.Link className={styles.mylink} href="/deputados">Deputados </Nav.Link>
+            <Nav.Link className={styles.mylink} href="/deputados">Detalhes </Nav.Link>
           </Nav>
           <Form className={styles.myform}>
             <Form.Control className={styles.mysearch} type="search" placeholder="Buscar" aria-label="Buscar"/>
