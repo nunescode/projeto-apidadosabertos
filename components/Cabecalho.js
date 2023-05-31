@@ -10,8 +10,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 const Cabecalho = () => {
   return (
     <>
+    
+
     <Navbar className={styles.mynavbar} bg="success" variant="dark">
-        <Container>
+        <Container className={styles.fullWidth}>
           <Navbar.Brand className={styles.mynavbrand} href="#home">Pagina Inicial</Navbar.Brand>
           <Nav className={styles.mynav}>
             <Nav.Link className={styles.mylink} href="/deputados">Deputados </Nav.Link>
@@ -23,6 +25,7 @@ const Cabecalho = () => {
             </Form>
         </Container>
       </Navbar>
+    
     </>
   )
 }

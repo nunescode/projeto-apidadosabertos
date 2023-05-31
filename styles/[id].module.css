@@ -32,4 +32,5 @@
 .tabledetalhes {
     font-family: 'Roboto', 'sans-serif';
     background:linear-gradient(yellow, green);
+    border-style: none;
 }

@@ -12,7 +12,7 @@
 .meucard {
   background-color:rgb(218, 213, 213);
   border: none;
-  border-radius: 0.9rem;
+  border-radius: 1.5rem;
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
   transition: transform 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   width: 210px;
@@ -42,7 +42,6 @@
   background-color: #008000;
   color: #fff;
   border: none;
-  border-radius: 0.5rem;
   font-weight: bold;
   transition: background-color 0.16s ease-in-out;
 }
@@ -51,10 +50,18 @@
   background-color: #006400;
 }
 
+.pageContainer {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(22, 155, 33, 0.479) 100%), url('../images/foto.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
 .photo {
   justify-content: center;
-  border: dotted ;
-  border-radius: 50%;
+  border: groove;
+  border-radius: 45%;
   height: 170px;
   width: 170px;
   color: yellow;

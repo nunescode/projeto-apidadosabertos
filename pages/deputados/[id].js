@@ -6,6 +6,8 @@ import { Alert, Card, Col, Row, Table } from 'react-bootstrap'
 import styles from '../../styles/[id].module.css'
 
 const Detalhes = ({ deputadoDt, despesas }) => {
+
+
   return (
     <>
       <Pagina titulo='Detalhes do Deputado'>
@@ -52,7 +54,8 @@ const Detalhes = ({ deputadoDt, despesas }) => {
           </Table>
         </Card>
         </Col>
-        </Row>  
+        </Row>
+      
       </Pagina>
     </>
   )
@@ -69,7 +72,6 @@ export async function getServerSideProps(context) {
 
   const resDespesas = await apiDeputados.get('/deputados/' + id + '/despesas/')
   const despesas = resDespesas.data.dados
-
 
   return {
     props: { deputadoDt, despesas },
