@@ -51,7 +51,7 @@
 }
 
 .pageContainer {
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(22, 155, 33, 0.479) 100%), url('../images/foto.jpg');
+  background-image: linear-gradient(to bottom, rgba(0, 217, 255, 0.164) 0%, rgba(0, 0, 0, 0.774) 100%), url('../images/foto.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -70,4 +70,56 @@
 .header {
   background-color: rgb(30, 134, 30);
   border-radius: 0.15rem;
+}
+
+.cover {
+  background-image: url('https://images7.alphacoders.com/516/thumb-1920-516124.png');
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.cover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('https://images7.alphacoders.com/516/thumb-1920-516124.png');
+  background-position: center;
+  background-size: cover;
+  filter: blur(10px); /* Ajuste o valor do desfoque conforme necessário */
+  z-index: -1;
+}
+
+
+.carouselImage {
+  width: 90vh; 
+  height: 90vh; 
+  object-fit: cover; 
+}
+
+.carouselCaption {
+  border-radius: 5rem;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  transition: transform 0.3s;
+}
+
+.carouselCaption:hover {
+  transform: translateY(-10px); /* Ajuste a quantidade de deslocamento vertical conforme necessário */
+}
+
+
+.carouselTitle {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.carouselDescription {
+  font-size: 18px;
+  color: #fff;
 }

@@ -7,13 +7,7 @@ import { Card, Col, Row, Image } from "react-bootstrap";
 
 const index = ({ deputados }) => {
 
- 
-
-  
-
   return (
-
-
     <>
       <div className={styles.pageContainer}>
         <Pagina titulo="Lista de deputados">
@@ -25,8 +19,7 @@ const index = ({ deputados }) => {
                     <Image
                       variant="top"
                       className={styles.photo}
-                      src={item.urlFoto}
-                    />
+                      src={item.urlFoto}/>
                   </Card.Header>
                   <Card.Body>
                     <Card.Title className={styles.meutitle}>
@@ -40,10 +33,7 @@ const index = ({ deputados }) => {
                       <strong>UF: </strong>
                       {item.siglaUf}
                     </p>
-                    <Link
-                      className="btn btn-primary"
-                      href={"/deputados/" + item.id}
-                    >
+                    <Link className="btn btn-primary" href={"/deputados/" + item.id}>
                       Detalhes
                     </Link>
                   </Card.Body>
