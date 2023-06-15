@@ -26,25 +26,3 @@
     margin-bottom: 20px;
     color: #333;
   }
-  
-  @media screen and (max-width: 768px) {
-    .container {
-      padding: 10px;
-    }
-  
-    .infotitle {
-      font-size: 24px;
-    }
-  
-    .infosubtitle {
-      font-size: 20px;
-      margin-top: 30px;
-      margin-bottom: 12px;
-    }
-  
-    .infoparagraph {
-      font-size: 16px;
-      margin-bottom: 16px;
-    }
-  }
-  
