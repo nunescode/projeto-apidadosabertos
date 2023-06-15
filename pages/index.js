@@ -4,11 +4,12 @@ import { Carousel } from "react-bootstrap";
 
 import styles from "../styles/index.module.css";
 import Rodape from "@/components/Rodape";
+import Link from "next/link";
 
 const Index = () => {
   return (
     <>
-      <div className={styles.cover}> 
+      <div className={styles.cover}>
         <Pagina>
           <Carousel>
             <Carousel.Item interval={2000}>
@@ -18,8 +19,16 @@ const Index = () => {
                 alt="First slide"
               />
               <Carousel.Caption className={styles.carouselCaption}>
-                <h3 className={styles.carouselTitle}>Informações Institucionais</h3>
-                <p className={styles.carouselDescription}>Informações gerais sobre a Câmara Legislativa, como sua missão, estrutura organizacional, comitês existentes, eventos futuros, entre outros..</p>
+                <Link href="/info">
+                  <h3 className={styles.carouselTitle}>
+                    Informações Institucionais
+                  </h3>
+                  <p className={styles.carouselDescription}>
+                    Informações gerais sobre a Câmara Legislativa, como sua
+                    missão, estrutura organizacional, comitês existentes,
+                    eventos futuros, entre outros..
+                  </p>
+                </Link>
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item interval={2000}>
@@ -29,8 +38,13 @@ const Index = () => {
                 alt="Second slide"
               />
               <Carousel.Caption className={styles.carouselCaption}>
-                <h3 className={styles.carouselTitle}>Agenda Legislativa</h3>
-                <p className={styles.carouselDescription}>Projetos e debates programados, horários e comitês responsáveis.</p>
+                <Link href="/agenda">
+                  <h3 className={styles.carouselTitle}>Agenda Legislativa</h3>
+                  <p className={styles.carouselDescription}>
+                    Projetos e debates programados, horários e comitês
+                    responsáveis.
+                  </p>
+                </Link>
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item interval={2000}>
@@ -40,13 +54,20 @@ const Index = () => {
                 alt="Third slide"
               />
               <Carousel.Caption className={styles.carouselCaption}>
-                <h3 className={styles.carouselTitle}>Notícias e Atualizações</h3>
-                <p className={styles.carouselDescription}>Votações importantes, debates em destaque ou mudanças nas leis.</p>
+                <Link href="noticias">
+                  <h3 className={styles.carouselTitle}>
+                    Notícias e Atualizações
+                  </h3>
+                  <p className={styles.carouselDescription}>
+                    Votações importantes, debates em destaque ou mudanças nas
+                    leis.
+                  </p>
+                </Link>
               </Carousel.Caption>
             </Carousel.Item>
           </Carousel>
         </Pagina>
-        <Rodape/>
+        <Rodape />
       </div>
     </>
   );

@@ -2,7 +2,6 @@
 
 .colum {
   padding: 1.2rem;
-
 }
 
 .cardtamanho {
@@ -10,7 +9,7 @@
 }
 
 .meucard {
-  background-color:rgb(218, 213, 213);
+  background-color: #F5F5F5;
   border: none;
   border-radius: 1.5rem;
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
@@ -51,25 +50,24 @@
 }
 
 .pageContainer {
-  background-image: linear-gradient(to bottom, rgba(0, 217, 255, 0.164) 0%, rgba(0, 0, 0, 0.774) 100%), url('../images/foto.jpg');
+  width: 100%;
+  min-height: 100vh;
+  backdrop-filter: blur(10px); 
+  background: linear-gradient(to bottom, rgb(25, 135, 84), rgba(0, 119, 255, 0.568)); 
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh;
 }
 
 .photo {
   justify-content: center;
   border: groove;
-  border-radius: 45%;
+  border-radius: 50%;
   height: 170px;
   width: 170px;
-  color: yellow;
 }
 
 .header {
-  background-color: rgb(30, 134, 30);
-  border-radius: 0.15rem;
+  background-color: #00b919c2;
 }
 
 .cover {
@@ -89,10 +87,9 @@
   background-image: url('https://images7.alphacoders.com/516/thumb-1920-516124.png');
   background-position: center;
   background-size: cover;
-  filter: blur(10px); /* Ajuste o valor do desfoque conforme necessário */
+  filter: blur(10px);
   z-index: -1;
 }
-
 
 .carouselImage {
   width: 90vh; 
@@ -109,17 +106,18 @@
 }
 
 .carouselCaption:hover {
-  transform: translateY(-10px); /* Ajuste a quantidade de deslocamento vertical conforme necessário */
+  transform: translateY(-10px); 
 }
 
-
 .carouselTitle {
+  text-decoration: none;
   font-size: 24px;
   font-weight: bold;
   color: #fff;
 }
 
 .carouselDescription {
+  text-decoration: none;
   font-size: 18px;
   color: #fff;
 }
