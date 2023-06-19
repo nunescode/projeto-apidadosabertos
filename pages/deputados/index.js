@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Pagina from "@/components/Pagina";
 import apiDeputados from "@/services/apiDeputados";
 import styles from "../../styles/index.module.css";
-import buscaStyles from "../../styles/busca.module.css"
+import buscaStyles from "../../styles/busca.module.css";
 import Link from "next/link";
 import { Card, Col, Row, Image } from "react-bootstrap";
 
@@ -18,15 +18,11 @@ const Index = ({ deputados }) => {
     const filteredDeputados = deputados.filter((deputado) => {
       const nomeMatch =
         searchNome !== "" &&
-        deputado.nome
-        .toLowerCase()
-        .includes(searchNome.toLowerCase());
+        deputado.nome.toLowerCase().includes(searchNome.toLowerCase());
 
       const ufMatch =
         searchUF !== "" &&
-        deputado.siglaUf
-        .toLowerCase()
-        .includes(searchUF.toLowerCase());
+        deputado.siglaUf.toLowerCase().includes(searchUF.toLowerCase());
 
       const partidoMatch =
         searchPartido !== "" &&
@@ -48,10 +44,7 @@ const Index = ({ deputados }) => {
       <div className={styles.pageContainer}>
         <Pagina titulo="Lista de deputados">
           <div className={buscaStyles.busca}>
-            <form
-              className={buscaStyles.searchform}
-              onSubmit={handleSearch}
-            >
+            <form className={buscaStyles.searchform} onSubmit={handleSearch}>
               <input
                 className={buscaStyles.searchinput}
                 type="text"

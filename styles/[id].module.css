@@ -3,9 +3,20 @@
 .detalhescard {
     font-family: 'Roboto', 'sans-serif';
     max-width: 300px;
+    max-height: 100%;
     margin: 0 auto;
     display: flex;
     text-align: center;
+}
+
+.imagemcard {
+    margin-top: 1rem;
+    margin-left: 6.5rem;
+    width: 120px;
+    border: groove;
+    border-radius: 50%;
+    height: 190px;
+    width: 170px;
 }
 
 .textcard {
@@ -29,8 +40,13 @@
     color: black;
 }
 
-.tabledetalhes {
-    font-family: 'Roboto', 'sans-serif';
-    background:linear-gradient(yellow, green);
-    border-style: none;
+.grafico {
+    display: flex;
+    gap: 5px;
 }
+
+.canvascontainer {
+    font-size: 30px; /* Ajuste o tamanho do texto dos gráficos */
+  }
+  
+  
