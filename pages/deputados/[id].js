@@ -4,7 +4,7 @@ import React, { useEffect } from "react";
 import { Alert, Card, Col, Row } from "react-bootstrap";
 import { Chart } from "chart.js";
 import "chart.js/dist/chart.min.css";
-
+import { Bar } from 'chart.js';
 import styles from "../../styles/[id].module.css";
 
 const Detalhes = ({ deputadoDt, despesas, eventos }) => {
@@ -88,7 +88,7 @@ const Detalhes = ({ deputadoDt, despesas, eventos }) => {
 
     // Configure o gráfico de eventos
     new Chart(ctxEventos, {
-      type: "doughnut",
+      type: "bar",
       data: {
         labels: labelsEventos,
         datasets: [
@@ -114,13 +114,6 @@ const Detalhes = ({ deputadoDt, despesas, eventos }) => {
             display: true,
             text: "Eventos por Tipo",
             position: "start",
-          },
-          legend: {
-            labels: {
-              font: {
-                size: 16, // Defina o tamanho do texto das legendas do gráfico de eventos
-              },
-            },
           },
         },
       },
