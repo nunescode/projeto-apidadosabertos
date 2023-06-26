@@ -34,22 +34,6 @@ const Index = () => {
             <Carousel.Item interval={2000}>
               <img
                 className={`d-block w-100 ${styles.carouselImage}`}
-                src="https://www.cnmp.mp.br/portal/images/noticias/2022/julho/Agenda-Legislativa.jpg"
-                alt="Second slide"
-              />
-              <Carousel.Caption className={styles.carouselCaption}>
-                <Link href="/agenda">
-                  <h3 className={styles.carouselTitle}>Agenda Legislativa</h3>
-                  <p className={styles.carouselDescription}>
-                    Projetos e debates programados, horários e comitês
-                    responsáveis.
-                  </p>
-                </Link>
-              </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item interval={2000}>
-              <img
-                className={`d-block w-100 ${styles.carouselImage}`}
                 src="https://www.ceap.br/wp-content/uploads/2019/05/NOT%C3%8DCIAS-banner.png"
                 alt="Third slide"
               />

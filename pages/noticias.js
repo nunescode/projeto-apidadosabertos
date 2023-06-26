@@ -11,7 +11,7 @@ const noticias = ({ proposicoes }) => {
           <tr>
             <th>Sigla Tipo</th>
             <th>Ementa</th>
-            <th>Ementa</th>
+            <th>Data</th>
           </tr>
         </thead>
         <tbody>
@@ -19,7 +19,7 @@ const noticias = ({ proposicoes }) => {
             <tr key={item.id}>
               <td>{item.siglaTipo}</td>
               <td>{item.ementa}</td>
-              <td>{proposicoes.descricao}</td>
+              <td>{item.ano}</td>
             </tr>
           ))}
         </tbody>
@@ -31,8 +31,9 @@ const noticias = ({ proposicoes }) => {
 export default noticias;
 
 export async function getServerSideProps(context) {
-  const resultado = await apiDeputados.get("/proposicoes/");
+  const resultado = await apiDeputados.get("/proposicoes/?itens=100");
   const proposicoes = resultado.data.dados
+  proposicoes.sort((a, b) => new Date(b.ano) - new Date(a.ano));
 
   return {
     props: { proposicoes },

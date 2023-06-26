@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Container, Form, Nav, Navbar } from "react-bootstrap";
+import { Container, Nav, Navbar } from "react-bootstrap";
 
 import styles from "../styles/Cabecalho.module.css";
 
@@ -17,8 +17,8 @@ const Cabecalho = () => {
             <Nav.Link className={styles.mylink} href="/deputados">
               Deputados{" "}
             </Nav.Link>
-            <Nav.Link className={styles.mylink} href="/deputados">
-              Detalhes{" "}
+            <Nav.Link className={styles.mylink} href="/despesas">
+              Despesas{" "}
             </Nav.Link>
           </Nav>
         </Container>
