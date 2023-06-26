@@ -1,7 +1,7 @@
 
 # # # Construção de FrontEnd # # #
 
-⏳... Projeto acadêmico em andamento ...⏳
+⏳... Projeto acadêmico finalizado ...⏳
 
 
 👋 Este é um projeto acadêmico integrando a API de Dados Abertos da Câmara Legislativa.
