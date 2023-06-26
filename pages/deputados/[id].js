@@ -4,7 +4,6 @@ import React, { useEffect } from "react";
 import { Alert, Card, Col, Row } from "react-bootstrap";
 import { Chart } from "chart.js";
 import "chart.js/dist/chart.min.css";
-import { Bar } from 'chart.js';
 import styles from "../../styles/[id].module.css";
 
 const Detalhes = ({ deputadoDt, despesas, eventos }) => {
@@ -17,11 +16,9 @@ const Detalhes = ({ deputadoDt, despesas, eventos }) => {
   };
 
   useEffect(() => {
-    // Gráfico de Despesas por Tipo
     const canvasDespesas = document.getElementById("graficoDespesas");
     const ctxDespesas = canvasDespesas.getContext("2d");
 
-    // Obtenha a contagem de despesas por tipo
     const despesasPorTipo = despesas.reduce((acumulador, item) => {
       if (acumulador[item.tipoDespesa]) {
         acumulador[item.tipoDespesa]++;
@@ -31,11 +28,9 @@ const Detalhes = ({ deputadoDt, despesas, eventos }) => {
       return acumulador;
     }, {});
 
-    // Crie os arrays de rótulos e dados para o gráfico de despesas
     const labelsDespesas = Object.keys(despesasPorTipo);
     const dataDespesas = Object.values(despesasPorTipo);
 
-    // Configure o gráfico de despesas
     new Chart(ctxDespesas, {
       type: "pie",
       data: {
@@ -68,11 +63,9 @@ const Detalhes = ({ deputadoDt, despesas, eventos }) => {
       },
     });
 
-    // Gráfico de Eventos
     const canvasEventos = document.getElementById("graficoEventos");
     const ctxEventos = canvasEventos.getContext("2d");
 
-    // Obtenha a contagem de eventos por tipo
     const eventosPorTipo = eventos.reduce((acumulador, item) => {
       if (acumulador[item.descricaoTipo]) {
         acumulador[item.descricaoTipo]++;
@@ -82,11 +75,9 @@ const Detalhes = ({ deputadoDt, despesas, eventos }) => {
       return acumulador;
     }, {});
 
-    // Crie os arrays de rótulos e dados para o gráfico de eventos
     const labelsEventos = Object.keys(eventosPorTipo);
     const dataEventos = Object.values(eventosPorTipo);
 
-    // Configure o gráfico de eventos
     new Chart(ctxEventos, {
       type: "bar",
       data: {
